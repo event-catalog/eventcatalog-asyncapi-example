@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "paymentId": {
+            "type": "string",
+            "description": "Unique identifier for the payment",
+            "x-parser-schema-id": "<anonymous-schema-18>"
+        },
+        "orderId": {
+            "type": "string",
+            "description": "Unique identifier for the related order",
+            "x-parser-schema-id": "<anonymous-schema-19>"
+        },
+        "failureReason": {
+            "type": "string",
+            "description": "Reason for the payment failure",
+            "x-parser-schema-id": "<anonymous-schema-20>"
+        }
+    },
+    "x-parser-schema-id": "<anonymous-schema-17>"
+}

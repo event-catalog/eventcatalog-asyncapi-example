@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "orderId": {
+            "type": "string",
+            "description": "Unique identifier for the order",
+            "x-parser-schema-id": "<anonymous-schema-27>"
+        },
+        "items": {
+            "type": "array",
+            "description": "List of items in the order",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "itemId": {
+                        "type": "string",
+                        "description": "Unique identifier for the item",
+                        "x-parser-schema-id": "<anonymous-schema-30>"
+                    },
+                    "quantity": {
+                        "type": "integer",
+                        "description": "Quantity of the item ordered",
+                        "x-parser-schema-id": "<anonymous-schema-31>"
+                    }
+                },
+                "x-parser-schema-id": "<anonymous-schema-29>"
+            },
+            "x-parser-schema-id": "<anonymous-schema-28>"
+        }
+    },
+    "x-parser-schema-id": "<anonymous-schema-26>"
+}

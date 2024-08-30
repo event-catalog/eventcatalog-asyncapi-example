@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "refundId": {
+            "type": "string",
+            "description": "Unique identifier for the refund",
+            "x-parser-schema-id": "<anonymous-schema-21>"
+        },
+        "paymentId": {
+            "type": "string",
+            "description": "Unique identifier for the related payment",
+            "x-parser-schema-id": "<anonymous-schema-22>"
+        },
+        "completionTime": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Time when the refund was completed",
+            "x-parser-schema-id": "<anonymous-schema-23>"
+        },
+        "status": {
+            "type": "string",
+            "description": "Status of the refund process",
+            "x-parser-schema-id": "<anonymous-schema-24>"
+        }
+    },
+    "x-parser-schema-id": "<anonymous-schema-20>"
+}

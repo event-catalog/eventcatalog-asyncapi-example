@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "paymentId": {
+            "type": "string",
+            "description": "Unique identifier for the payment",
+            "x-parser-schema-id": "<anonymous-schema-4>"
+        },
+        "orderId": {
+            "type": "string",
+            "description": "Unique identifier for the related order",
+            "x-parser-schema-id": "<anonymous-schema-5>"
+        },
+        "amount": {
+            "type": "number",
+            "format": "float",
+            "description": "Amount to be paid",
+            "x-parser-schema-id": "<anonymous-schema-6>"
+        },
+        "currency": {
+            "type": "string",
+            "description": "Currency in which the payment is made",
+            "x-parser-schema-id": "<anonymous-schema-7>"
+        }
+    },
+    "x-parser-schema-id": "<anonymous-schema-3>"
+}

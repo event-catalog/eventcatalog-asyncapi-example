@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "orderId": {
+            "type": "string",
+            "description": "Unique identifier for the order",
+            "x-parser-schema-id": "<anonymous-schema-21>"
+        },
+        "deliveryTime": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Time when the order was delivered",
+            "x-parser-schema-id": "<anonymous-schema-22>"
+        },
+        "recipientName": {
+            "type": "string",
+            "description": "Name of the person who received the order",
+            "x-parser-schema-id": "<anonymous-schema-23>"
+        }
+    },
+    "x-parser-schema-id": "<anonymous-schema-20>"
+}

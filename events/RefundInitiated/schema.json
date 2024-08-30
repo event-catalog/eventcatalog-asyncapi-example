@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "properties": {
+        "refundId": {
+            "type": "string",
+            "description": "Unique identifier for the refund",
+            "x-parser-schema-id": "<anonymous-schema-24>"
+        },
+        "paymentId": {
+            "type": "string",
+            "description": "Unique identifier for the related payment",
+            "x-parser-schema-id": "<anonymous-schema-25>"
+        },
+        "amount": {
+            "type": "number",
+            "format": "float",
+            "description": "Amount to be refunded",
+            "x-parser-schema-id": "<anonymous-schema-26>"
+        },
+        "currency": {
+            "type": "string",
+            "description": "Currency in which the refund is made",
+            "x-parser-schema-id": "<anonymous-schema-27>"
+        },
+        "createdAt": {
+            "type": "string",
+            "description": "ISO Date String of when the refund was initiated",
+            "x-parser-schema-id": "<anonymous-schema-28>"
+        }
+    },
+    "x-parser-schema-id": "<anonymous-schema-23>"
+}
