@@ -1,17 +1,15 @@
+import path from 'path';
+import url from 'url';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
+
 /** @type {import('@eventcatalog/core/bin/eventcatalog.config').Config} */
-
-// get __dirname
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import { join } from 'path';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-
 export default {
   title: 'OurLogix',
   tagline: 'A comprehensive logistics and shipping management company',
   organizationName: 'OurLogix',
   homepageLink: 'https://eventcatalog.dev/',
+  landingPage: '',
   editUrl: 'https://github.com/boyney123/eventcatalog-demo/edit/master',
   // By default set to false, add true to get urls ending in /
   trailingSlash: false,
@@ -34,14 +32,14 @@ export default {
     [
       '@eventcatalogtest/generator-asyncapi',
       {
-        path: [join(__dirname, 'asyncapi-files', 'orders-service.yml'), join(__dirname, 'asyncapi-files', 'order-fulfillment-service.yml'), join(__dirname, 'asyncapi-files', 'inventory-service.yml')],
+        path: [path.join(__dirname, 'asyncapi-files', 'orders-service.yml'), path.join(__dirname, 'asyncapi-files', 'order-fulfillment-service.yml'), path.join(__dirname, 'asyncapi-files', 'inventory-service.yml')],
         domain: { id: 'orders', name: 'Orders', version: '0.0.1' },
       },
     ],
     [
       '@eventcatalogtest/generator-asyncapi',
       {
-        path: [join(__dirname, 'asyncapi-files', 'payment-service.yml'), join(__dirname, 'asyncapi-files', 'fraud-detection-service.yml')],
+        path: [path.join(__dirname, 'asyncapi-files', 'payment-service.yml'), path.join(__dirname, 'asyncapi-files', 'fraud-detection-service.yml')],
         domain: { id: 'payment', name: 'Payment', version: '0.0.1' },
       },
     ],
