@@ -12,7 +12,7 @@ This example contains
 ### Getting Started
 
 1. Clone this project
-1. Run `npm run i`
+1. Run `npm install`
 1. Run the generators `npm run generate`
 1. Run the catalog `npm run dev`
 1. View your catalog at https://localhost:3000
