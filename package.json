@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@eventcatalog/core": "latest",
-    "@eventcatalogtest/generator-asyncapi": "^0.0.3"
+    "@eventcatalog/generator-asyncapi": "latest"
   },
   "devDependencies": {
     "@parcel/watcher": "2.4.1",

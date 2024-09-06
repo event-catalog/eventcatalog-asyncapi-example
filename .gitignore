@@ -22,3 +22,9 @@ yarn-debug.log*
 yarn-error.log*
 
 .eventcatalog-core
+
+events/
+domains/
+services/
+commands/
+queries/
