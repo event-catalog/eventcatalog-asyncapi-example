@@ -15,7 +15,7 @@ export default {
   trailingSlash: false,
   // Change to make the base url of the site different, by default https://{website}.com/docs,
   // changing to /company would be https://{website}.com/company/docs,
-  base: '/',
+  base: '/company',
   // Customize the logo, add your logo to public/ folder
   logo: {
     alt: 'EventCatalog Logo',
@@ -41,6 +41,14 @@ export default {
       {
         path: [path.join(__dirname, 'asyncapi-files', 'payment-service.yml'), path.join(__dirname, 'asyncapi-files', 'fraud-detection-service.yml')],
         domain: { id: 'payment', name: 'Payment', version: '0.0.1' },
+      },
+    ],
+    [
+      '@eventcatalog/generator-asyncapi',
+      {
+        path: [path.join(__dirname, 'asyncapi-files', 'user-service.yml')],
+        domain: { id: 'users', name: 'User', version: '0.0.1' },
+        debug: true
       },
     ],
   ],

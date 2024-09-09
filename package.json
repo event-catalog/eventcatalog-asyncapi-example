@@ -11,13 +11,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@eventcatalog/core": "latest",
-    "@eventcatalog/generator-asyncapi": "latest"
+    "@eventcatalog/core": "^2.6.2",
+    "@eventcatalog/generator-asyncapi": "^0.1.2"
   },
   "devDependencies": {
     "@parcel/watcher": "2.4.1",
     "@types/lodash.merge": "4.6.9",
     "concurrently": "8.2.2",
     "cross-env": "7.0.3"
-  }
+  },
+  "packageManager": "pnpm@7.33.6+sha512.90e27fd38047f18583f3342f784cc3f187f4d4caac89ebc1fffae18dcd7b2dde7678a0bf237481bcb8f7e8e66135fa34803856e4eb2c442ce082ffab5d9d241f"
 }
