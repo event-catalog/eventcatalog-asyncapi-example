@@ -5,6 +5,7 @@ const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 /** @type {import('@eventcatalog/core/bin/eventcatalog.config').Config} */
 export default {
+  cId: 'f8597068-04ce-4cbc-97d4-ceb18b709fd1',
   title: 'OurLogix',
   tagline: 'A comprehensive logistics and shipping management company',
   organizationName: 'OurLogix',
@@ -33,8 +34,8 @@ export default {
       '@eventcatalog/generator-asyncapi',
       {
         services: [
-          { path: path.join(__dirname, 'asyncapi-files', 'orders-service.yml') },
-          { path: path.join(__dirname, 'asyncapi-files', 'order-fulfillment-service.yml') },
+          { path: path.join(__dirname, 'asyncapi-files', 'orders-service.yml'), id: 'Orders Service' },
+          { path: path.join(__dirname, 'asyncapi-files', 'order-fulfillment-service.yml'), folderName: 'order-fulfillment' },
           { path: path.join(__dirname, 'asyncapi-files', 'inventory-service.yml')}
         ],
         domain: { id: 'orders', name: 'Orders', version: '0.0.1' },
