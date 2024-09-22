@@ -13,11 +13,5 @@
   "dependencies": {
     "@eventcatalog/core": "^2.8.1",
     "@eventcatalog/generator-asyncapi": "^1.0.4"
-  },
-  "devDependencies": {
-    "@parcel/watcher": "2.4.1",
-    "@types/lodash.merge": "4.6.9",
-    "concurrently": "8.2.2",
-    "cross-env": "7.0.3"
   }
 }
