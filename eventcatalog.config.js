@@ -35,8 +35,8 @@ export default {
       {
         services: [
           { path: path.join(__dirname, 'asyncapi-files', 'orders-service.yml'), id: 'Orders Service' },
-          { path: path.join(__dirname, 'asyncapi-files', 'order-fulfillment-service.yml'), folderName: 'order-fulfillment' },
-          { path: path.join(__dirname, 'asyncapi-files', 'inventory-service.yml')}
+          { path: path.join(__dirname, 'asyncapi-files', 'order-fulfillment-service.yml'), id: 'Order Fulfillment' },
+          { path: path.join(__dirname, 'asyncapi-files', 'inventory-service.yml'), id: 'Inventory Service' },
         ],
         domain: { id: 'orders', name: 'Orders', version: '0.0.1' },
       },
@@ -45,8 +45,8 @@ export default {
       '@eventcatalog/generator-asyncapi',
       {
         services: [
-          { path: path.join(__dirname, 'asyncapi-files', 'payment-service.yml')},
-          { path: path.join(__dirname, 'asyncapi-files', 'fraud-detection-service.yml') }
+          { path: path.join(__dirname, 'asyncapi-files', 'payment-service.yml'), id: 'Payment Service' },
+          { path: path.join(__dirname, 'asyncapi-files', 'fraud-detection-service.yml'), id: 'Fraud Detection' },
         ],
         domain: { id: 'payment', name: 'Payment', version: '0.0.1' },
       },
@@ -55,7 +55,7 @@ export default {
       '@eventcatalog/generator-asyncapi',
       {
         services: [
-          { path: path.join(__dirname, 'asyncapi-files', 'user-service.yml')},
+          { path: path.join(__dirname, 'asyncapi-files', 'user-service.yml'), id: 'User Service' },
         ],
         domain: { id: 'users', name: 'User', version: '0.0.1' },
         debug: true
